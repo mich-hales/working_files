@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--opening and closing html tag with opening tag containing an attribute specifying the language of the page for the browser-->
+<html lang="en-US">
+  <!--head section does not show on the page, but describes the page and provides links to style sheets, etc.-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>CSS Selectors</title>
+  </head>
+
+  <!--the body is the section that is contained on the actualy page/browser-->
+  <body>
+    <!--defining the header section which makes it semantic code-->
+    <header>
+      <!--h1 opening and closing tags which is the biggest/most important header-->
+      <h1>Student Bio</h1>
+    </header>
+
+    <!--semantically correct defining the main section of the page-->
+    <main>
+      <!--section which helps create structure-->
+      <section>
+        <!--h2 is also a header but just smaller than h1, could be a subheading-->
+        <h2>About Me</h2>
+        <!--figure is semantically setting up the page so it is easily readable-->
+        <figure>
+          <!--image with the src providing where the image can be located and the alt which provides a description in case the image doesn't show up-->
+          <img src="./assets/images/image-1.jpg" alt="placeholder image with text reading 200 width 200 height"/>
+          <!--represents a caption describing the rest of the contents of its parent figure element-->
+          <figcaption>Student Image</figcaption>
+        </figure>
+        <!--paragraph which defines the paragraph with a class attribute which is helping link to css to provide the correct changes/edits-->
+        <p class="highlighted-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </section>
+
+      <!--section with an id attribute which is only specified for this element, vs class attributes can call on all class attributes with the same name-->
+      <section id="contact-section">
+        <h2>Contact Information</h2>
+        <!--unordered list with all the parts below-->
+        <ul class="highlighted-text">
+          <li>Email: <a href="#">someplace@gmail.com</a></li>
+          <li>GitHub: <a href="#">sampleName</a></li>
+          <li>Portfolio: <a href="#">coming soon</a></li>
+        </ul>
+        <!--break, which breaks to the next line on the page-->
+        <br>
+      </section>
+    </main>
+    <!--footer which is a semantically correct way of coding the footer-->
+    <footer>
+      <p>© 2022 Student Bio Productions</p>
+    </footer>
+  </body>
+
+</html>
